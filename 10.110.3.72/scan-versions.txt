@@ -1,0 +1,96 @@
+# Nmap 7.95 scan initiated Tue Oct 13 15:26:46 2026 as: nmap -sV -T3 -p- --max-retries 2 -oN 10.110.3.72/scan-versions.txt 10.110.3.72
+Nmap scan report for 10.110.3.72
+Host is up (0.00027s latency).
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE     VERSION
+22/tcp   open     ssh         OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)
+3000/tcp open     ppp?
+5355/tcp filtered llmnr
+8000/tcp open     tcpwrapped
+8010/tcp open     http        Gunicorn
+8011/tcp open     http        Gunicorn
+8012/tcp open     http        Gunicorn
+8013/tcp open     http        Gunicorn
+8014/tcp open     http        Gunicorn
+8015/tcp open     http        Gunicorn
+8016/tcp open     http        Gunicorn
+8017/tcp open     http        Gunicorn
+8018/tcp open     http        Gunicorn
+8019/tcp open     http        Gunicorn
+8020/tcp open     http        Gunicorn
+8021/tcp open     http        Gunicorn
+8022/tcp open     http        Gunicorn
+8023/tcp open     http        Gunicorn
+8081/tcp open     http        Apache httpd 2.4.7 ((Ubuntu))
+8082/tcp open     http        Apache httpd 2.4.25 ((Debian))
+8083/tcp open     http        Apache httpd 2.4.7 ((Ubuntu))
+8084/tcp open     http        Apache httpd 2.4.67 ((Debian))
+9001/tcp open     tor-orport?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=7.95%I=7%D=10/13%Time=6ACE4DC5%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,2668,"HTTP/1\.1\x20200\x20OK\r\nAccess-Control-Allow-Origin:\
+SF:x20\*\r\nX-Content-Type-Options:\x20nosniff\r\nX-Frame-Options:\x20SAME
+SF:ORIGIN\r\nFeature-Policy:\x20payment\x20'self'\r\nX-Recruiting:\x20/#/j
+SF:obs\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20public,\x20max-age=
+SF:0\r\nLast-Modified:\x20Fri,\x2002\x20Oct\x202026\x2013:14:12\x20GMT\r\n
+SF:ETag:\x20W/\"24b1-1a0fcc03ff0\"\r\nContent-Type:\x20text/html;\x20chars
+SF:et=UTF-8\r\nContent-Length:\x209393\r\nVary:\x20Accept-Encoding\r\nDate
+SF::\x20Tue,\x2013\x20Oct\x202026\x2015:27:01\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\n<!--\n\x20\x20~\x20Copyright\x20\(c\)\x202014-2026\x20Bjoern\
+SF:x20Kimminich\x20&\x20the\x20OWASP\x20Juice\x20Shop\x20contributors\.\n\
+SF:x20\x20~\x20SPDX-License-Identifier:\x20MIT\n\x20\x20-->\n\n<!doctype\x
+SF:20html>\n<html\x20lang=\"en\"\x20data-beasties-container>\n<head>\n\x20
+SF:\x20<meta\x20charset=\"utf-8\">\n\x20\x20<title>OWASP\x20Juice\x20Shop<
+SF:/title>\n\x20\x20<meta\x20name=\"description\"\x20content=\"Probably\x2
+SF:0the\x20most\x20modern\x20and\x20sophisticated\x20insecure\x20web\x20ap
+SF:plication\">\n\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=dev
+SF:ice-width,\x20initial-scale=1\">\n\x20\x20<link\x20rel=\"preconnect\"\x
+SF:20href=\"htt")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(NCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nConnection:\x20close\r\n\r\n")%r(HTTPOptions,EA,"HTTP/1\.1\x20204\x20N
+SF:o\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Control-Al
+SF:low-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x20Access-Contr
+SF:ol-Request-Headers\r\nContent-Length:\x200\r\nDate:\x20Tue,\x2013\x20Oc
+SF:t\x202026\x2015:27:01\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(RTSPRe
+SF:quest,EA,"HTTP/1\.1\x20204\x20No\x20Content\r\nAccess-Control-Allow-Ori
+SF:gin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,
+SF:DELETE\r\nVary:\x20Access-Control-Request-Headers\r\nContent-Length:\x2
+SF:00\r\nDate:\x20Tue,\x2013\x20Oct\x202026\x2015:27:01\x20GMT\r\nConnecti
+SF:on:\x20close\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9001-TCP:V=7.95%I=7%D=10/13%Time=6ACE4DC2%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,12,"What's\x20your\x20name\?\n")%r(GenericLines,24,"What's\x20your\
+SF:x20name\?\nHello,\x20\r\nGoodbye\.\n")%r(GetRequest,32,"What's\x20your\
+SF:x20name\?\nHello,\x20GET\x20/\x20HTTP/1\.0\r\nGoodbye\.\n")%r(SSLSessio
+SF:nReq,25,"What's\x20your\x20name\?\nHello,\x20\x16\x03\nGoodbye\.\n")%r(
+SF:TLSSessionReq,25,"What's\x20your\x20name\?\nHello,\x20\x16\x03\nGoodbye
+SF:\.\n")%r(SSLv23SessionReq,1F,"What's\x20your\x20name\?\nHello,\x20\x80\
+SF:x9e\x01\x03\x01\n")%r(JavaRMI,12,"What's\x20your\x20name\?\n")%r(Radmin
+SF:,12,"What's\x20your\x20name\?\n")%r(mongodb,12,"What's\x20your\x20name\
+SF:?\n")%r(tarantool,2D,"What's\x20your\x20name\?\nHello,\x20show\x20info\
+SF:r\nGoodbye\.\n")%r(HTTPOptions,36,"What's\x20your\x20name\?\nHello,\x20
+SF:OPTIONS\x20/\x20HTTP/1\.0\r\nGoodbye\.\n")%r(RTSPRequest,36,"What's\x20
+SF:your\x20name\?\nHello,\x20OPTIONS\x20/\x20RTSP/1\.0\r\nGoodbye\.\n")%r(
+SF:RPCCheck,12,"What's\x20your\x20name\?\n")%r(DNSVersionBindReqTCP,12,"Wh
+SF:at's\x20your\x20name\?\n")%r(DNSStatusRequestTCP,12,"What's\x20your\x20
+SF:name\?\n")%r(Help,28,"What's\x20your\x20name\?\nHello,\x20HELP\r\nGoodb
+SF:ye\.\n")%r(TerminalServerCookie,24,"What's\x20your\x20name\?\nHello,\x2
+SF:0\x03\nGoodbye\.\n")%r(Kerberos,23,"What's\x20your\x20name\?\nHello,\x2
+SF:0\nGoodbye\.\n")%r(SMBProgNeg,12,"What's\x20your\x20name\?\n")%r(X11Pro
+SF:be,12,"What's\x20your\x20name\?\n")%r(FourOhFourRequest,55,"What's\x20y
+SF:our\x20name\?\nHello,\x20GET\x20/nice%20ports%2C/Tri%6Eity\.txt%2ebak\x
+SF:20HTTP/1\.0\r\nGoodbye\.\n")%r(LPDString,2B,"What's\x20your\x20name\?\n
+SF:Hello,\x20\x01default\nGoodbye\.\n")%r(LDAPSearchReq,25,"What's\x20your
+SF:\x20name\?\nHello,\x200\x84\nGoodbye\.\n")%r(LDAPBindReq,12,"What's\x20
+SF:your\x20name\?\n")%r(SIPOptions,3A,"What's\x20your\x20name\?\nHello,\x2
+SF:0OPTIONS\x20sip:nm\x20SIP/2\.0\r\nGoodbye\.\n")%r(LANDesk-RC,12,"What's
+SF:\x20your\x20name\?\n")%r(TerminalServer,12,"What's\x20your\x20name\?\n"
+SF:)%r(NCP,12,"What's\x20your\x20name\?\n")%r(NotesRPC,12,"What's\x20your\
+SF:x20name\?\n")%r(WMSRequest,12,"What's\x20your\x20name\?\n")%r(oracle-tn
+SF:s,12,"What's\x20your\x20name\?\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 13 15:28:44 2026 -- 1 IP address (1 host up) scanned in 117.30 seconds

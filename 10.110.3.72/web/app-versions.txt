@@ -1,0 +1,25 @@
+== WordPress 8084 ==
+version 2
+== Juice Shop 3000 ==
+{"version":"20.2.0"}== bWAPP 8081 ==
+== DVWA 8082 == v1.10 (from <title>)
+== Mutillidae 8083 ==
+Mutillidae II: Keep Calm and Pwn On
+Mutillidae-over-Virtual-Box-network.php"
+Mutillidae-over-Virtual-Box-network.php"
+Mutillidae">Styling with Mutilidae
+Mutillidae-over-Virtual-Box-network.php"
+Mutillidae">Styling with Mutilidae
+Mutillidae-over-Virtual-Box-network.php"
+Mutillidae-over-Virtual-Box-network.php"
+Mutillidae">Styling with Mutilidae
+Mutillidae-over-Virtual-Box-network.php"
+== WP core (feed/opml/readme) ==
+version 2
+== Mutillidae version ==
+Version: 2.6.62
+Version: 5.5.9
+== bWAPP ==
+bWAPP - Login
+bWAPP
+bwappapp&utm_medium=banner&utm_campaign=bwapp

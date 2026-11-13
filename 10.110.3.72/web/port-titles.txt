@@ -1,0 +1,29 @@
+# Nmap 7.95 scan initiated Tue Oct 13 15:31:47 2026 as: nmap -T3 -p 3000,8000,8010-8023,8081-8084 --script http-title,http-server-header -oN 10.110.3.72/web/port-titles.txt 10.110.3.72
+Nmap scan report for 10.110.3.72
+Host is up (0.00055s latency).
+
+PORT     STATE SERVICE
+3000/tcp open  ppp
+8000/tcp open  http-alt
+|_http-server-header: gunicorn
+|_http-title: AEV
+8010/tcp open  xmpp
+8011/tcp open  unknown
+8012/tcp open  unknown
+8013/tcp open  unknown
+8014/tcp open  unknown
+8015/tcp open  cfg-cloud
+8016/tcp open  ads-s
+8017/tcp open  cisco-cloudsec
+8018/tcp open  unknown
+8019/tcp open  qbdb
+8020/tcp open  intu-ec-svcdisc
+8021/tcp open  ftp-proxy
+8022/tcp open  oa-system
+8023/tcp open  arca-api
+8081/tcp open  blackice-icecap
+8082/tcp open  blackice-alerts
+8083/tcp open  us-srv
+8084/tcp open  websnp
+
+# Nmap done at Tue Oct 13 15:31:47 2026 -- 1 IP address (1 host up) scanned in 0.19 seconds

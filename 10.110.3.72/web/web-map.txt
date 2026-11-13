@@ -1,0 +1,21 @@
+PORT   CODE   SERVER                       REDIRECT                       TITLE
+3000   200    -                            -                              OWASP Juice Shop
+8000   200    gunicorn                     -                              AEV
+8010   200    gunicorn                     -                              -
+8011   200    gunicorn                     -                              -
+8012   200    gunicorn                     -                              -
+8013   200    gunicorn                     -                              -
+8014   200    gunicorn                     -                              -
+8015   200    gunicorn                     -                              -
+8016   200    gunicorn                     -                              -
+8017   200    gunicorn                     -                              -
+8018   200    gunicorn                     -                              Acme Corp
+8019   200    gunicorn                     -                              -
+8020   200    gunicorn                     -                              -
+8021   200    gunicorn                     -                              Lab recipes
+8022   200    gunicorn                     -                              Bench log
+8023   200    gunicorn                     -                              Team card
+8081   302    Apache/2.4.7 (Ubuntu)        portal.php                     -
+8082   302    Apache/2.4.25 (Debian)       login.php                      -
+8083   200    Apache/2.4.7 (Ubuntu)        -                              -
+8084   200    Apache/2.4.67 (Debian)       -                              -

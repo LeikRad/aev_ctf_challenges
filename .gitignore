@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local scratch
+*.log
+tmp/
+scratch/
+challenges/web/wordpress/wp2shell-poc
+
+# Agent instructions (local only)
+AGENTS.md
+
+# Chat logs
+openai_chat.md

@@ -1,0 +1,60 @@
+================ :3000 ================
+HTTP/1.1 200 OK
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+  OPTIONS Allow: (none)
+  TRACE -> HTTP 200
+================ :8000 ================
+HTTP/1.1 200 OK
+Server: gunicorn
+Set-Cookie: session=b67ed257-3d9c-476a-84d7-35f426394d01.ToKTFb0oT1S5eIRotqflHv78hZQ; HttpOnly; Path=/; SameSite=Lax
+  OPTIONS Allow: Allow: OPTIONS, HEAD, GET
+  TRACE -> HTTP 404
+================ :8010 ================
+HTTP/1.1 200 OK
+Server: gunicorn
+  OPTIONS Allow: Allow: GET, OPTIONS, HEAD
+  TRACE -> HTTP 405
+================ :8015 ================
+HTTP/1.1 200 OK
+Server: gunicorn
+  OPTIONS Allow: Allow: OPTIONS, GET, HEAD
+  TRACE -> HTTP 405
+================ :8018 ================
+HTTP/1.1 200 OK
+Server: gunicorn
+  OPTIONS Allow: Allow: OPTIONS, HEAD, GET
+  TRACE -> HTTP 405
+================ :8020 ================
+HTTP/1.1 200 OK
+Server: gunicorn
+  OPTIONS Allow: Allow: GET, OPTIONS, HEAD
+  TRACE -> HTTP 405
+================ :8081 ================
+HTTP/1.1 302 Found
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+  OPTIONS Allow: (none)
+  TRACE -> HTTP 405
+================ :8082 ================
+HTTP/1.1 302 Found
+Server: Apache/2.4.25 (Debian)
+Set-Cookie: PHPSESSID=58hd6550ecodrs3cvvliji1m66; path=/
+Set-Cookie: PHPSESSID=58hd6550ecodrs3cvvliji1m66; path=/
+Set-Cookie: security=low
+  OPTIONS Allow: (none)
+  TRACE -> HTTP 405
+================ :8083 ================
+HTTP/1.1 200 OK
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.24
+Set-Cookie: PHPSESSID=1cgpqje7b1eetts03v1gun7rl6; path=/
+Set-Cookie: showhints=1
+  OPTIONS Allow: (none)
+  TRACE -> HTTP 405
+================ :8084 ================
+HTTP/1.1 200 OK
+Server: Apache/2.4.67 (Debian)
+X-Powered-By: PHP/8.3.31
+  OPTIONS Allow: (none)
+  TRACE -> HTTP 405

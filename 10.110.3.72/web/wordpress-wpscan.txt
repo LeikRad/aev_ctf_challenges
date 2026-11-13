@@ -1,0 +1,53 @@
+[+] URL: http://wordpress.chal.deti:8084/ [10.110.3.72]
+[+] Started: Tue Oct 13 20:31:19 2026
+[+] Command Line: wpscan --url http://wordpress.chal.deti:8084 --no-banner --enumerate p,t,u -o /home/student/infoleak/10.110.3.72/web/wordpress-wpscan.txt
+[+] Hostname: s14
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.67 (Debian)
+ |  - X-Powered-By: PHP/8.3.31
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] WordPress readme found: http://wordpress.chal.deti:8084/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] This site seems to be a multisite
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | Reference: http://codex.wordpress.org/Glossary#Multisite
+
+[+] The external WP-Cron seems to be enabled: http://wordpress.chal.deti:8084/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 7.1.3 identified (Latest, released on 2026-10-06).
+ | Found By: Query Parameter In Install Page (Aggressive Detection)
+ |  - http://wordpress.chal.deti:8084/wp-includes/css/dashicons.min.css?ver=7.1.3
+ |  - http://wordpress.chal.deti:8084/wp-includes/css/buttons.min.css?ver=7.1.3
+ |  - http://wordpress.chal.deti:8084/wp-admin/css/forms.min.css?ver=7.1.3
+ |  - http://wordpress.chal.deti:8084/wp-admin/css/l10n.min.css?ver=7.1.3
+ |  - http://wordpress.chal.deti:8084/wp-admin/css/install.min.css?ver=7.1.3
+
+[i] The main theme could not be detected.
+
+
+[+] akismet
+ | Location: http://wordpress.chal.deti:8084/wp-content/plugins/akismet/
+ | Latest Version: 5.7.2
+ | Last Updated: 2026-08-18 11:42pm GMT (1 month ago, per WordPress.org)
+ | Active Installs: 5,000,000 (per WordPress.org)
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://wordpress.chal.deti:8084/wp-content/plugins/akismet/, status: 403
+ |
+ | The version could not be determined.
+
+Scan Aborted: Canceled by User

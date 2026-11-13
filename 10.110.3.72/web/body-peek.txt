@@ -1,0 +1,41 @@
+== 8010 ==
+<h1>App</h1><p>Static assets under /static/.</p><a href="/static/config.py">config</a>
+
+== 8011 ==
+<h1>App</h1><p>Normal API service.</p><small>status: <a href="/status">/status</a></small>
+
+== 8012 ==
+<h1>Media</h1><p>Company media hub.</p><img src="/public/banner.png" alt="banner">
+
+== 8013 ==
+<h1>Build host</h1><p>Release v1.4.2</p><a href="/CHANGELOG.md">changelog</a>
+
+== 8014 ==
+<h1>API</h1><p>Directory service.</p><a href="/api/users/1">profile</a>
+
+== 8015 ==
+<h1>Auth service</h1><form action="/login" method="post"><input name="user" value="guest"><button>login</button></form>
+
+== 8016 ==
+<h1>Oracle</h1><form action="/oracle" method="get"><input name="prefix"><button>check</button></form>
+
+== 8017 ==
+<h1>Public site</h1><p>Nothing interesting.</p><small>crawlers: see our rules<br><img src="/favicon.ico" width="1" height="1"></small>
+
+== 8019 ==
+<h1>Error lab</h1><form action="/crash" method="get"><input name="msg"><button>send</button></form>
+
+== 8020 ==
+<h1>Notes</h1><form method=post action=/login>user <input name=user> pass <input name=pw type=password><button>login</button></form>
+
+== 8083 ==
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+	<link rel="shortcut icon" href="./images/favicon.ico" type=
+
+== 8084 ==
+WARNING: Failed to daemonise.  This is quite common and not fatal.
+No route to host (113)
+
+
